@@ -11,8 +11,8 @@ let observer = new IntersectionObserver((entries, observer) => {
             observer.unobserve(entry.target); // Stop observing once animated
         }
     });
-}, {
-    rootMargin: "0px 0px -30% 0px" // Trigger when the element is almost in view
+}, {    
+    rootMargin: "0px 0px -35% 0px" // Trigger when the element is almost in view
 });
 
 // Observe the individual img-container elements (with left-logo and right-logo classes)
