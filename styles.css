@@ -47,6 +47,9 @@
 .image{
     width: 90%;
     height: 90%;
+    border-width: 6px;
+
+
 }
 }
 
