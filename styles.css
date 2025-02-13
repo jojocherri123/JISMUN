@@ -230,11 +230,9 @@ form{
 
 /* Main Content */
 main {
-    /* padding: 20px; */
     max-width: 100%;
     margin: auto;
     text-align: center;
-    /* padding: 12px; */
 }
 
 section {
@@ -274,8 +272,7 @@ footer {
     margin-top: 50px;  
     width: 100%;
     height: 30px;
-    /* position: sticky;
-    bottom: 0%; */
+    
 }
 
 .cards{
