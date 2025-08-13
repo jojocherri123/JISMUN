@@ -1,4 +1,5 @@
 header .logo{
+    padding: 20px 0px;
     width:42px;
     height:auto;
     filter:hue-rotate(0deg) contrast(0%) saturate(1) brightness(3);
@@ -6,13 +7,13 @@ header .logo{
 
 body{
     margin: 0 auto;
-    font-family:'Playfair Display';
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #1c0202;
 }
 
-  /* General Styles */
-body:before {
+/* General Styles */
+/* body:before {
     font-family:Arial, sans-serif;
-    background-color: #1c0202;
     background: url("menubackground.jpg") no-repeat center;
     background-size: 100%;
     content: "";
@@ -20,20 +21,19 @@ body:before {
     width: 100vw;
     position: fixed;
     z-index: -2;
-    /* filter:hue-rotate(35deg) contrast(100%) saturate(1) brightness(10); */
+    filter:hue-rotate(35deg) contrast(100%) saturate(1) brightness(10);
     filter:blur(6px) grayscale(1);
-
-}
+} */
 
 h1{
-    color: #000000;
     margin: 0;
     font-size: 32px;
 }
 
 /* Header */
 header {
-    background-color:  #3c0008;
+    color: #ffffff;
+    background-color:  #6e000f;
     width: 100%;
     display: flex;
     align-items: center; 
@@ -66,10 +66,85 @@ header {
     padding: 10px 20px;
     border-radius: 20px;
 
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+
 }
 .button:hover{
     background-color: #70232e;
     padding: 10px 20px;
     border-radius: 20px;
     transition-duration: 0.3s;
+}
+
+.menubackground
+{
+    border-radius: 50px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 25px;
+    width: 80%; height: auto;
+    mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+    grid-column: 1;
+    grid-row: 1;
+}
+
+.timerContainer{
+    display: grid;
+}
+.timer{
+    color: #ffffff;
+    font-weight:900;
+    padding: 25px;
+    margin: auto;
+    grid-column: 1;
+    grid-row: 1;
+    z-index: 1;
+    font-size: 64px;
+}
+
+.committees{
+    margin: 0 auto;
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-auto-rows: auto;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.committee {
+    display: grid;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width: 90%;
+    border-radius: 12px;
+    text-align: center;
+    filter:hue-rotate(0deg) contrast(100%) saturate(0.2) brightness(1);
+
+}
+
+.committee:hover {
+    width: 100%;
+
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 1);
+    filter:hue-rotate(0deg) contrast(100%) saturate(1) brightness(1);
+
+}
+
+.committeeTxt{
+    color: #ffffff;
+    margin: auto;
+    font-size: 32px;
+}
+
+.committeeImg{
+    border-radius: 12px;
+}
+
+.committeeImg, .committeeTxt{
+    grid-column: 1;
+    grid-row: 1;
 }
