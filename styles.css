@@ -10,21 +10,7 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     background-color: #1c0202;
 }
-
-/* General Styles */
-/* body:before {
-    font-family:Arial, sans-serif;
-    background: url("menubackground.jpg") no-repeat center;
-    background-size: 100%;
-    content: "";
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    z-index: -2;
-    filter:hue-rotate(35deg) contrast(100%) saturate(1) brightness(10);
-    filter:blur(6px) grayscale(1);
-} */
-
+    
 h1{
     margin: 0;
     font-size: 32px;
