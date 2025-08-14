@@ -92,12 +92,12 @@ header {
     grid-column: 1;
     grid-row: 1;
     z-index: 1;
-    font-size: 64px;
+    font-size: 46px;
 }
 
 .committees{
     margin: 0 auto;
-    max-width: 1200px;
+    width: 65%;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-auto-rows: auto;
@@ -141,21 +141,22 @@ header {
 
 .title{
     color: #ffffff;
-    font-size: 45px;
+    font-size: 32px;
     margin-left: 10%;
 }
 
 .shedule-center{
     display: flex;
     justify-content: center;
-    
+    padding: 12px;
 }
 .shedule{
+    background-image:linear-gradient(to bottom, #1c0202 0%,rgba(0,0,0,1) 100%);
     background-color: #340707;
     padding:12px 12px;
     border-radius: 12px;
-    border-style: double;
-    border-width: 5px;
+    /* border-style: double;
+    border-width: 5px; */
     width: 80%;
 }
 
@@ -173,6 +174,11 @@ header {
     border-radius: 4px;
     font-weight: bold;
     font-size: 24px;
+    transition: 0.3s;
+}
+.tab-button:hover{
+    background-color: #8b6b6b;
+
 }
 
 .tab-button.active {
@@ -182,6 +188,8 @@ header {
 
 .schedule-content {
     display: none;
+    visibility: hidden;
+    opacity: 0;
     color: #ffffff;
     background-color: #6a0a0a;
     padding:12px 12px;
@@ -190,10 +198,13 @@ header {
     border-width: 5px;
     border-color: #000000;
     margin: auto;
+    
 }
 
 .schedule-content.active {
     display: block;
+    opacity: 1;
+    visibility: visible;
 }
 
 .scheduleTitles{
@@ -221,3 +232,90 @@ td, th {
 tr:nth-child(even) {
     background-color: #dddddd1d;
 }
+
+
+.feesCards{
+    margin: 0 auto;
+    width: 60%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
+    grid-auto-rows: auto;
+    gap: 20px;
+    padding-top: 30px;
+}
+
+.feesCard{
+    /* display: block; */
+    width: 80%;
+    height: 100%;
+    border-radius: 10px;
+    background-color:#6e000f;
+    padding: 10px;
+    margin: auto;
+    border: none;
+    white-space:normal;
+}
+
+.feesCard:hover{
+    height: 110%;
+    width: 95%;
+    transition: 0.2s;
+}
+
+.feesCard h1{
+    margin: auto;
+    border-radius: 12px;
+    background-color: #3f070f;
+    font-size: 24px;
+    color: #dddddd;
+    padding: 12px;
+    text-align: center;
+
+}
+
+.feesCard p{
+    margin: auto;
+    border-radius: 12px;
+    background-color: #ffffff;
+    width: 60%;    
+    color: #000000;
+    padding: 12px;
+    font-weight: bold;
+    text-align: center;
+    
+}
+
+.cardsAndNote{
+    display: flex;
+    padding: 12px;
+    gap: 10px;
+}
+
+.feesNote{
+    width: 50%;
+    font-size: 24px;
+    padding: 12px;
+    background-color: #6a0a0a;
+    border-radius: 24px 0px 24px 0px;
+}
+
+.applyButton{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#map { 
+    padding: 12px;
+    height: 400px; 
+    width: 45%;
+}
+
+.mapClass{
+    display: flex;
+    justify-content: center;
+    background-color: #6a0a0a;
+    gap: 12px;
+    padding: 12px;
+}
+

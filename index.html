@@ -2,7 +2,16 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="styles.css">
+    <title>JISMUN26</title>
+    <link rel="icon" href="Logo.png">
 
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""/>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""></script>
 </head>
 
 <body>
@@ -34,42 +43,42 @@
 
                 <div class="committee">
                     <img class="committeeImg" style="width:100%;" src="committees/UNSC.jpg" alt="">
-                    <h4 class="committeeTxt" style="z-index: 1;"><b>UNSC</b></h4>
+                    <h4 class="committeeTxt" style="z-index: 1;"><b>DISEC</b></h4>
                 </div>
 
                 <div class="committee">
                     <img class="committeeImg" style="width:100%;" src="committees/UNSC.jpg" alt="">
-                    <h4 class="committeeTxt" style="z-index: 1;"><b>UNSC</b></h4>
+                    <h4 class="committeeTxt" style="z-index: 1;"><b>UNWOMEN</b></h4>
                 </div>
 
                 <div class="committee">
                     <img class="committeeImg" style="width:100%;" src="committees/UNSC.jpg" alt="">
-                    <h4 class="committeeTxt" style="z-index: 1;"><b>UNSC</b></h4>
+                    <h4 class="committeeTxt" style="z-index: 1;"><b>UNOOSA</b></h4>
                 </div>
 
                 <div class="committee">
                     <img class="committeeImg" style="width:100%;" src="committees/UNSC.jpg" alt="">
-                    <h4 class="committeeTxt" style="z-index: 1;"><b>UNSC</b></h4>
+                    <h4 class="committeeTxt" style="z-index: 1;"><b>F-UNSC</b></h4>
                 </div>
 
                 <div class="committee">
                     <img class="committeeImg" style="width:100%;" src="committees/UNSC.jpg" alt="">
-                    <h4 class="committeeTxt" style="z-index: 1;"><b>UNSC</b></h4>
+                    <h4 class="committeeTxt" style="z-index: 1;"><b>HOC</b></h4>
                 </div>
 
                 <div class="committee">
                     <img class="committeeImg" style="width:100%;" src="committees/UNSC.jpg" alt="">
-                    <h4 class="committeeTxt" style="z-index: 1;"><b>UNSC</b></h4>
+                    <h4 class="committeeTxt" style="z-index: 1;"><b>HCC</b></h4>
                 </div>
 
                 <div class="committee">
                     <img class="committeeImg" style="width:100%;" src="committees/UNSC.jpg" alt="">
-                    <h4 class="committeeTxt" style="z-index: 1;"><b>UNSC</b></h4>
+                    <h4 class="committeeTxt" style="z-index: 1;"><b>JCC</b></h4>
                 </div>
 
                 <div class="committee">
                     <img class="committeeImg" style="width:100%;" src="committees/UNSC.jpg" alt="">
-                    <h4 class="committeeTxt" style="z-index: 1;"><b>UNSC</b></h4>
+                    <h4 class="committeeTxt" style="z-index: 1;"><b>ICJ</b></h4>
                 </div>
 
             </div>
@@ -253,8 +262,61 @@
             </div>
         </div>
 
-    <!-- <hr id="fees" style="margin-left: 40px;margin-right: 40px;">
-    <h1 class="title">Fees</h1> -->
+    <hr id="fees" style="margin-left: 40px;margin-right: 40px;">
+    <h1 class="title">Fees</h1>
+
+    <div class="cardsAndNote">
+
+    <p class="feesNote">This note is a thing of quiet wonder, its beauty unfolding line by line like a story told in soft light. The note carries with it an air of care and intention, as though each word was chosen not only for its meaning but for how it might rest in the heart of the reader. The note does not merely speak—it lingers, it hums, it leaves traces of thought and feeling that echo long after the last word is read. The note is more than ink on paper; it is a small, crafted world, and stepping into it feels like being welcomed into a moment meant just for you.</p>
+
+    <div class="feesCards">
+
+        <button class="feesCard" onclick="alert('Fired!')">
+            <h1>Indivisual Delegate</h1>
+            <p>9999₺</p>
+        </button>
+
+        <button class="feesCard" onclick="alert('Fired!')">
+            <h1>Delegation</h1>
+            <p>9999₺</p>
+        </button>
+
+        <button class="feesCard" onclick="alert('Fired!')">
+            <h1>International Delegate</h1>
+            <p>chaching</p>
+        </button>
+
+        <button class="feesCard" onclick="alert('Fired!')">
+            <h1>Press Member</h1>
+            <p>9999₺</p>
+        </button>
+
+        <button class="feesCard" onclick="alert('Fired!')">
+            <h1>Administrative Staff</h1>
+            <p>9999₺</p>
+
+        </button>
+
+        <button class="feesCard" onclick="alert('Fired!')">
+            <h1>Board Member</h1>
+            <p>9999₺</p>
+        </button>
+
+    </div>
+    </div>
+
+    <hr id="location" style="margin-left: 40px;margin-right: 40px;">
+    <h1 class="title">Location</h1>
+    
+    <div class="mapClass">
+        <div>
+            <h1>Find us here</h1>
+        </div>
+        <div id="map"></div>
+    </div>
+
+    <hr id="faq" style="margin-left: 40px;margin-right: 40px;">
+    <h1 class="title">Frequently asked questions</h1>
 
     </main>
 
@@ -262,4 +324,6 @@
 
 <script src="shedule.js"></script>
 <script src="countDown.js"></script>
+<script src="map.js"></script>
+
 </html>
