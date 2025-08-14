@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 header .logo{
     padding: 20px 0px;
     width:42px;
@@ -10,7 +14,7 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     background-color: #1c0202;
 }
-    
+
 h1{
     margin: 0;
     font-size: 32px;
@@ -133,4 +137,87 @@ header {
 .committeeImg, .committeeTxt{
     grid-column: 1;
     grid-row: 1;
+}
+
+.title{
+    color: #ffffff;
+    font-size: 45px;
+    margin-left: 10%;
+}
+
+.shedule-center{
+    display: flex;
+    justify-content: center;
+    
+}
+.shedule{
+    background-color: #340707;
+    padding:12px 12px;
+    border-radius: 12px;
+    border-style: double;
+    border-width: 5px;
+    width: 80%;
+}
+
+.tabs {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.tab-button {
+    padding: 8px 16px;
+    cursor: pointer;
+    border: none;
+    background-color: #eee;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+.tab-button.active {
+    background-color: #120202;
+    color: white;
+}
+
+.schedule-content {
+    display: none;
+    color: #ffffff;
+    background-color: #6a0a0a;
+    padding:12px 12px;
+    border-radius: 12px;
+    border-style: double;
+    border-width: 5px;
+    border-color: #000000;
+    margin: auto;
+}
+
+.schedule-content.active {
+    display: block;
+}
+
+.scheduleTitles{
+    font-size: 30px;
+}
+
+.scheduleTimes{
+    background-color: #000000;
+    margin: auto;
+}
+
+table{
+    width: 100%;
+
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 0px 8px;
+    width: 100%;
+    border-radius: 6px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd1d;
 }
