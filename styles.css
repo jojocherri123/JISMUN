@@ -31,13 +31,63 @@ header {
 }
 
 .menuBar{
-    
-    display: flex;
+    display: block;
     gap: 20px;
     padding: 0 20px;
+}
+/* 
+.menuBar.responsive{
+    gap: 20px;
+    padding: 0 20px;
+} */
+
+.menuBar .icon {
+  display: none;
+}
+
+.menuBar a{
+    background-color: #3f070f;
+    padding: 10px 20px;
+    border-radius: 20px;
+
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+
+}
+.menuBar a:hover{
+    background-color: #70232e;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition-duration: 0.3s;
+}
+
+.mobileBar{
+    display:none;
+    gap: 20px;
+    padding: 20px 20px;
+    background-color: #120202;
 
 }
 
+.mobileBar a{
+    background-color: #3f070f;
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 24px;
+
+}
+
+@media screen and (max-width: 1252px) {
+
+.menuBar a {display: none;}
+.menuBar a.icon {
+    float: right;
+    display: block;
+}
+}
 .brand {
     display: flex;
     align-items: center;           
@@ -51,22 +101,6 @@ header {
     justify-content: space-between;
 }
 
-.button{
-    background-color: #3f070f;
-    padding: 10px 20px;
-    border-radius: 20px;
-
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 24px;
-
-}
-.button:hover{
-    background-color: #70232e;
-    padding: 10px 20px;
-    border-radius: 20px;
-    transition-duration: 0.3s;
-}
 
 .menubackground
 {
