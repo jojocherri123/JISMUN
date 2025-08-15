@@ -151,7 +151,6 @@ header {
     padding: 12px;
 }
 .shedule{
-    background-image:linear-gradient(to bottom, #1c0202 0%,rgba(0,0,0,1) 100%);
     background-color: #340707;
     padding:12px 12px;
     border-radius: 12px;
@@ -275,7 +274,7 @@ tr:nth-child(even) {
 
 .feesCard p{
     margin: auto;
-    border-radius: 12px;
+    border-radius: 0px 0px 12px 12px;
     background-color: #ffffff;
     width: 60%;    
     color: #000000;
@@ -299,23 +298,94 @@ tr:nth-child(even) {
     border-radius: 24px 0px 24px 0px;
 }
 
-.applyButton{
-    margin-left: auto;
-    margin-right: auto;
-    
+.MapButton{
+    background-color: #1c0202;
+    padding: 12px;
+    border-radius: 12px;
+    text-decoration: none;
+    color: #eee;
+    font-size: 24px;
+    margin:auto;
+    text-align: center;
+    width: 30%;
+}
+.MapButton:hover{
+    transition: 0.2s;
+    transform: scale(1.1); 
 }
 
 #map { 
     padding: 12px;
     height: 400px; 
-    width: 45%;
+    width: 70%;
+    border-radius: 12px 0px 12px 0px;
 }
 
 .mapClass{
+    margin: auto;
+    width: 80%;
     display: flex;
     justify-content: center;
-    background-color: #6a0a0a;
+    background-color: #2e0303;
     gap: 12px;
     padding: 12px;
+    border-radius: 12px;
+}
+.mapGroup{
+    margin: auto;
+    width: 35%;
 }
 
+.mapGroup p{
+    margin: auto;
+    background-color: #6a0a0a;
+    color: #dddddd;
+    text-align: center;
+    padding: 12px;
+    border-radius: 12px;
+    width: 60%;
+}
+
+.mapGroup h1{
+    color: #dddddd;
+    text-align:left;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.faqClass{
+    justify-content:center;
+    color: #dddddd;
+    width: 50%;
+    background-color: #340707;
+    margin: auto;
+    padding: 12px;
+    border-radius: 12px;
+}
+
+.question{
+    background-color: #2e0303;
+    text-align: center;
+    color: #dddddd;
+    margin:auto;
+    padding: 0px;
+    border-radius: 12px;
+}
+
+.contacts{
+    display: flex;
+    justify-content: center;
+    color: white;
+    gap: 24px;
+}
+
+.contacts i{
+    font-size: 46px;
+}
+
+.contacts i:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    color: #828282;
+
+}
