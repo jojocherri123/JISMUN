@@ -100,7 +100,7 @@ header {
     align-items: center;           
     justify-content: space-between;
 }
-
+ 
 
 .menubackground
 {
@@ -109,10 +109,17 @@ header {
     margin-left: auto;
     margin-right: auto;
     padding: 25px;
-    width: 80%; height: auto;
+    width: 80%; 
+    height: auto;
     mask-image: linear-gradient(to top, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
     grid-column: 1;
     grid-row: 1;
+}
+
+@media screen and (max-width: 1195px) {
+    .menubackground{
+        width: 95%; 
+    }
 }
 
 .timerContainer{
@@ -140,6 +147,8 @@ header {
 }
 
 .committee {
+    margin: auto;
+    padding: 12px;
     display: grid;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
@@ -166,6 +175,7 @@ header {
 
 .committeeImg{
     border-radius: 12px;
+    margin: auto;
 }
 
 .committeeImg, .committeeTxt{
@@ -322,6 +332,7 @@ tr:nth-child(even) {
     display: flex;
     padding: 12px;
     gap: 10px;
+    margin: auto;
 }
 
 .feesNote{
@@ -331,6 +342,19 @@ tr:nth-child(even) {
     background-color: #6a0a0a;
     border-radius: 24px 0px 24px 0px;
 }
+
+@media screen and (max-width: 1195px) {
+    .cardsAndNote{
+        display: grid;
+        padding: 12px;
+        gap: 10px;
+    }
+    .feesNote{
+        width: 95%;
+        margin: auto;
+    }
+}
+
 
 .MapButton{
     background-color: #1c0202;
@@ -365,10 +389,32 @@ tr:nth-child(even) {
     padding: 12px;
     border-radius: 12px;
 }
+
 .mapGroup{
     margin: auto;
     width: 35%;
 }
+
+@media screen and (max-width: 1195px) {
+    .mapClass{
+        display: grid;
+    }
+
+    #map {
+    margin: auto;
+    padding: 12px;
+    height: 400px; 
+    width: 95%;
+    border-radius: 12px 0px 12px 0px;
+    }
+
+    .mapGroup{
+    margin: auto;
+    width: 100%;
+    }
+}
+
+
 
 .mapGroup p{
     margin: auto;
@@ -395,6 +441,14 @@ tr:nth-child(even) {
     margin: auto;
     padding: 12px;
     border-radius: 12px;
+}
+
+@media screen and (max-width: 1195px) {
+    .faqClass{
+        width: 95%;
+        margin: auto;
+}
+
 }
 
 .question{
