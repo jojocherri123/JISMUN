@@ -30,7 +30,12 @@ h1{
     max-width: 100%;
     display: flex;
     align-items: center; 
-    gap: 50px;    
+    position: sticky;
+    top: 0;
+
+    justify-content: space-between;
+    gap:0px;   
+    z-index:2 ;
 }
 
 .menuBar{
@@ -70,7 +75,10 @@ h1{
     gap: 20px;
     padding: 20px 20px;
     background-color: #120202;
-
+    position: sticky;
+    top: 0;
+    width: 60%;
+    z-index: 2;
 }
 
 .mobileBar a{
@@ -97,15 +105,6 @@ h1{
     gap: 10px;   
     padding: 0 20px;
 }
-
-.site-header {
-    display: flex;
-    align-items: center;           
-    justify-content: space-between;
-    gap:0px;   
-
-}
- 
 
 .menubackground
 {
