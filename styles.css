@@ -312,7 +312,7 @@ tr:nth-child(even) {
 
 @media screen and (max-width: 1195px) {
 
-    .feesCards{
+.feesCards{
     margin: 0 auto;
     width: 90%;
     display: grid;
@@ -325,7 +325,8 @@ tr:nth-child(even) {
 }
 
 .feesCard{
-    /* display: block; */
+    transform: scale(1.0); 
+    transition: 0.2s;
     width: 80%;
     height: 100%;
     border-radius: 10px;
@@ -334,12 +335,32 @@ tr:nth-child(even) {
     margin: auto;
     border: none;
     white-space:normal;
+    cursor: pointer;
+
+}
+
+
+@keyframes bang {
+from {
+    transform: translate3d(0,0,0);
+    opacity: 1;
+}
+}
+
+.feesCard i {
+    position: absolute;
+    display: block;
+    left: 50%;
+    top:50%;
+    width: 3px;
+    height: 8px;
+    background: red;
+    opacity: 0;
 }
 
 .feesCard:hover{
     transform: scale(1.1); 
     box-shadow: 6px -6px#3f070f;
-    transition: 0.2s;
 }
 
 .feesCard h1{
@@ -515,5 +536,4 @@ tr:nth-child(even) {
     transform: scale(1.1);
     transition: 0.3s;
     color: #828282;
-
 }
